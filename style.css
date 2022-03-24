@@ -114,10 +114,21 @@
   }
 
   .text h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .text h3 {
     font-size: 1.2em;
+    text-align: center;
   }
 }
+
+/*
+
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+
+*/

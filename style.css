@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   background: rgb(29, 57, 90);
-  color: #fff;
+  color: #8acdb8;
   z-index: 2;
 }
 
@@ -41,7 +41,7 @@
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #8acdb8;
   font-size: 16px;
   letter-spacing: 4px;
 }
@@ -97,7 +97,6 @@
 
 .social li a {
   display: inline-block;
-  filter: invert(1);
   margin-right: 20px;
   transform: scale(0.5);
   transition: 0.5s;

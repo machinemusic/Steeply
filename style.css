@@ -1,5 +1,5 @@
 :root {
-    --clr-primary-200: #ddd;
+    --clr-primary-200: #f9f6f1;
     --clr-neutral-900: #333;
 
     --ff-primary: 'Jost', sans-serif;
@@ -87,7 +87,7 @@ section {
 }
 
 .color-filter {
-    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(53%) hue-rotate(202deg) brightness(106%) contrast(73%);
+    filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(466%) hue-rotate(315deg) brightness(107%) contrast(95%);
 }
 
 .logo {

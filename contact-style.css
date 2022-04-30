@@ -162,11 +162,13 @@ section {
       url(images/drone3.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    animation: fadeIn .5s ease-in both;
 }
 
 .contact-us {
     position: relative;
     top: -35%;
+    animation: fadeInDown .5s ease-in both;
 }
 
 /* contact-us + pic.. */
@@ -176,6 +178,11 @@ section {
     flex-direction: column;
 }
 
+.fade-in-up {
+    animation: fadeInUp .5s ease-in both;
+    animation-delay: .3s;
+}
+
 .email {
     margin-top: 1rem;
 }
@@ -183,11 +190,15 @@ section {
 .cam-pic {
     height: 60px;
     margin: 1rem auto;
+    animation: fadeIn .5s ease-in both;
+    animation-delay: .3s;
 }
 
 .room-pic {
     height: 60px;
     margin: 1rem auto;
+    animation: fadeIn .5s ease-in both;
+    animation-delay: .3s;
 }
 
 
@@ -247,6 +258,41 @@ ul {
 .social li a:hover {
     transform: scale(0.5) translateY(-15px);
 }
+
+/* fade in animations.. */
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* fade in animations.. */
 
 @media (min-width: 40em) {
     header {

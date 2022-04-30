@@ -3,7 +3,7 @@
     --clr-neutral-900: #333;
 
     --ff-primary: 'Jost', sans-serif;
-    --ff-accent: 'Cormorant Garamond', serif;
+    --ff-accent: 'Cormorant Garamond', sans-serif;
 }
 
 *,
@@ -31,14 +31,14 @@ p {
 h1 {
     font-family: var(--ff-accent);
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1;
     letter-spacing: 1rem;
 }
 
 h2 {
-    font-family: var(--ff-accent);
-    font-weight: 600;
+    font-family: var(--ff-primary);
+    font-weight: 400;
     font-size: 1.1rem;
     letter-spacing: .3rem; 
     margin: 1rem;   
@@ -140,6 +140,20 @@ section {
 
 /* ..contact button */
 
+.steeply {
+    animation: fadeIn 1s ease-in both;
+}
+
+.top-text {
+    animation: fadeInDown 1s ease-in both;
+    animation-delay: .3s;
+}
+
+.bottom-text {
+    animation: fadeInUp 1s ease-in both;
+    animation-delay: .3s;
+}
+
 ul {
     margin: 0;
     padding-inline-start: 0;
@@ -170,6 +184,41 @@ ul {
     transform: scale(0.5) translateY(-15px);
 }
 
+/* fade in animations.. */
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/* fade in animations.. */
+
 @media (min-width: 40em) {
     header {
         padding: 40px 50px;
@@ -177,14 +226,14 @@ ul {
 
     h1 {
         font-size: 4rem;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 3rem;
     }
 
     h2 {
         font-size: 1.5rem;
         letter-spacing: 0.8rem;
-        font-weight: 900;
+        font-weight: 400;
     }
 
     a {
@@ -203,12 +252,12 @@ ul {
         letter-spacing: .17rem;
     }
 
-    .toptext {
-        margin-right: 325px;
+    .top-text {
+        margin-right: 315px;
     }
 
-    .bottomtext {
-        margin-left: 250px;
+    .bottom-text {
+        margin-left: 240px;
     }
 
     .social {
